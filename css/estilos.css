@@ -1,0 +1,430 @@
+html {
+    font-size: 62.9%;
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+body{
+
+    font-family: 'poppins';
+    font-size: 1.6rem;
+    line-height: 2;
+    background-color: rgba(122, 117, 117, 0.274);
+   
+   /* background-image: url(./bandera-chiquinquira-boyaca.jpg);
+    background-position: 50% 100%;
+    background-size: 35%;*/
+}
+
+img{
+    max-width: 100%;
+}  
+
+.contenedor {
+    
+    margin: 0 auto;
+    }
+ 
+
+    .contenido-principal{
+        display: grid;
+        min-height: 60.4vh ;
+        grid-template-rows: auto 1fr auto ;
+        margin-right: 2rem;
+        margin-left: 2rem;
+        padding-top: 5rem;
+        padding-bottom: 4rem;
+        
+    }
+
+    .lugares{
+        padding: 0 10rem;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+ 
+
+        
+.btn_lugares{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+}
+.btn_lugares a{
+    color: azure;
+    background-image: linear-gradient(to left, rgb(95, 9, 9),rgb(7, 7, 77),rgb(95, 9, 9));
+    border: 3px solid rgba(100, 100, 100, 0.1);
+    font-size: 2rem; 
+    margin-top: 3rem;
+    margin-bottom: 0;
+    padding: 10px 60px;
+    width: 300px;
+    border-radius: 10%;
+    text-decoration: none;
+    cursor: pointer;
+    background-size: 300%;
+}
+.btn_lugares a:hover {
+    background-position: right;
+}
+
+
+
+.site-header.inicio{
+   
+    height: 100vh;
+    min-height: 60rem;
+    background-position: center;
+    background-size: cover;
+    }
+ .contenido-header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+
+.contenido-header .tit{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-weight: 900;
+    width:100%;
+    position: relive;
+    top: 80rem;
+    color: aliceblue;
+    background-color: rgb(18, 20, 128);
+    line-height: 3;
+    text-align: center;
+    border-top-left-radius: 5rem;
+    border-top-right-radius: 5rem;      
+}
+    
+
+.contenido-header h1{
+    max-width: 60rem ;
+    font-size: 150%;
+}
+        
+.arriba{    
+    margin: 0;
+    width: 100%;
+    background:linear-gradient(0deg, rgb(95, 9, 9),rgb(7, 7, 77));
+    padding-top: 1.2%;
+    padding-bottom: 1.2%;
+    padding-left: 50%;
+    padding-right: 50%;
+   
+        
+}
+
+.barra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    width: 100%;
+    margin-top: 1rem;
+    
+
+}
+
+.Tit_rec{
+    display: flex;
+    text-align: center;
+}
+
+.Tit_rec h1{
+    color: rgb(7, 7, 54) ;
+    margin: 0;
+    font-weight: 600;
+}
+
+.barra{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    width: 100%;
+}
+.Linea1{
+    background-color: rgb(139, 115, 3);
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    padding-top: 4.6rem;
+    padding-bottom: 4rem;
+    margin-left:3rem;
+    margin-right:3rem;
+    border-radius: 19%;
+}
+
+.lineas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+   
+}
+
+
+a img {
+    margin: 0;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-bottom: 0%;
+    height: 9rem;
+    width: 9rem;
+}
+
+.caja {
+    display: flex;
+    flex-direction: column;
+    box-shadow:0 12px 20px 0 rgb(7, 7, 77) ;
+    width: 200px;
+    height: 300px;
+    border: 2px solid   rgb(7, 7, 77);
+    background:linear-gradient(80deg, rgb(95, 9, 9),rgb(7, 7, 77));
+    margin: 15px 40px;
+    border-radius: 10%;
+}
+
+
+
+.lugares img{
+    height: 80%;
+    width: 100%;
+    margin: 0;
+    border-top-left-radius: 9%;
+    border-top-right-radius: 9%;
+}
+
+a h2 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: aliceblue;
+    text-align: center;
+    margin: 0;
+    font-size:170%;
+    font-weight:100;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 8vh;
+}
+.ham{
+    display: none;
+    cursor: pointer;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    
+}
+.ham span {
+    display: block;
+    background-color: rgb(7, 7, 54);
+    height: 8px;
+    width: 40px;
+    margin-top: 0.2rem;
+    border-radius: 2px ;
+    
+}
+.enlaces-menu{
+    display: flex;
+    user-select: none;
+    
+}
+
+.enlaces-menu li{
+    padding: 0 4rem;
+    transition: 0.3s;
+    border-radius: 80%;
+}
+
+.enlaces-menu li:hover{
+    background:linear-gradient(10deg, rgb(95, 9, 9),rgb(7, 7, 77));
+    border-radius: 80%;
+  
+}
+.navegacion{
+    margin-top: 2rem;
+    background-color: rgb(7, 7, 54) ;
+    border-radius: 70%;
+}
+.navegacion a {
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.8rem; 
+    }
+    .ind li{
+        background:linear-gradient(10deg,rgb(7, 7, 77), rgb(95, 9, 9));
+        background-position: right;
+    }
+    .enlaces-menu li{
+        padding: 0 4rem;
+        transition: 0.3s;
+        border-radius: 80%;
+    }
+    
+
+    .carousel{
+        margin-bottom: 1rem;
+        
+    }
+    .carousel .carousel-item {
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        user-select: none;
+        width: 800px;
+        height: 800px;
+    }
+    .carousel img{
+        border-radius: 200rem;
+    }
+ 
+   @media (max-width: 768px){
+    .arriba{
+        width: 100%;
+        background:linear-gradient(10deg, rgb(95, 9, 9),rgb(7, 7, 77));
+        padding-top: 3%;
+        padding-bottom: 3%;
+        padding-left: 40%;
+        padding-right: 40%;    
+    }
+    
+    .ham{
+        display: block;
+        position: absolute;
+        top:50px;
+        right: 10px;
+        transition: 0.2s 0.1s;
+    }
+    .ham:hover{
+        transform: rotate(360deg);
+    }
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 25px, 0;
+    }
+    .enlaces-menu{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 92vh;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: none;
+        
+    }
+    .enlaces-menu li {
+        width: 100%;
+        text-align: center;
+        border-radius: 0%;
+    }
+    .navegacion{
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+    background:linear-gradient(10deg, rgb(95, 9, 9),rgb(7, 7, 77));
+    border-radius: 00%;
+    width: 100%;
+    
+}
+.ind li{
+    background:transparent;
+    background-position: right;
+}
+.enlaces-menu li:hover{
+    background:linear-gradient(0deg,rgb(7, 7, 77)), rgb(95, 9, 9);
+    border-radius: 00%;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+}
+.carousel .carousel-item {
+        
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    width: 800px;
+    height: 800px;
+}
+img{
+    max-width: 50%;
+    height: 40%;
+}
+.contenido-principal{
+        
+    margin-right: 5rem;
+    margin-left: 5rem;
+    padding-top:0;
+    padding-bottom: 4.7rem;
+    
+}
+.Titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    width: 80%;
+    margin-top: 1rem;
+    margin-left: 4rem;
+}   
+.ind{
+    width: 100%;
+}
+   }
+
+@keyframes muestraMenu {
+    from {opacity: 0;}
+    to {opacity: 1;}
+
+}
+
+.enlaces-menu.activado {
+    display: flex;
+    animation: muestraMenu 350ms ease-in-out both;
+}
+
+.br-1.animado {
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.br-2.animado{
+    opacity: 0;
+}
+
+.br-3.animado {
+    transform: rotate(45deg) translate(-8px, -6px);
+}
+
+.br-4.animado{
+    opacity: 0;
+}
+
+.contenido-principal.activado{
+    display: none;
+}
+.Titulo.activado{
+    display: none;
+}
+
+span.activado {
+    background-color: rgb(95, 9, 9);
+}
